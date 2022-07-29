@@ -1,0 +1,15 @@
+Algoritmo PromedioLanzamientoMartillos
+	Definir numerolanzamientos Como Entero
+	Escribir 'Numero de lanzamientos realizados por la atleta'
+	Leer numerolanzamientos
+	Dimension lanzamientos[numerolanzamientos]
+	Para n<-0 Hasta numerolanzamientos-1 Hacer
+		Escribir 'Ingrese el valor del/los lanzamiento/s del atleta'
+		Leer lanzamientos[n]
+	FinPara
+	Para a<-0 Hasta numerolanzamientos-1 Hacer
+		promedio <- promedio+lanzamientos[a]
+	FinPara
+	ponderacion <- promedio/numerolanzamientos
+	Escribir 'Promedio de Lanzamientos: ',ponderacion
+FinAlgoritmo
